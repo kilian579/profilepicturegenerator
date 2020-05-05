@@ -5,7 +5,7 @@ body {
 canvas#canvas {
     margin: 0 auto;
     display: block;
-    border: 1px solid #C8D0D8;
+    border: 1px solid #107e3e;
     padding: 10px;
 }
 
@@ -21,6 +21,6 @@ canvas#canvas {
     margin: 0 auto;
 }
 
-a.button:hover {
+.button:hover {
     background-color: #1da64a;
 }
