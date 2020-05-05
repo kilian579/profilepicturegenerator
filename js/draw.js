@@ -4,6 +4,7 @@ var button = document.getElementById("download");
 
 var img = new Image();
 var overlay = new Image();
+overlay.src = "img/overlay.png";
 
 
 document.getElementById('image-file').onchange = function(e) {
@@ -12,11 +13,12 @@ document.getElementById('image-file').onchange = function(e) {
     img.src = URL.createObjectURL(this.files[0]);
     overlay.onload = draw;
     
-    overlay.src = "img/overlay.png"
+    
     button.style="visibility:visible";
   };
 
   button.addEventListener('click', function (e) {
+    canvas.crossOrigin = 'anonymous';
     var dataURL = canvas.toDataURL('image/png');
     button.href = dataURL;
   }); 
