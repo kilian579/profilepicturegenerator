@@ -1,0 +1,26 @@
+body {
+    font-family: sans-serif;
+}
+
+canvas#canvas {
+    margin: 0 auto;
+    display: block;
+    border: 1px solid #C8D0D8;
+    padding: 10px;
+}
+
+.button {
+    display: block;
+    padding: 8px 10px;
+    text-decoration: none;
+    background-color: #107e3e;
+    width: 250px;
+    text-align: center;
+    color: #fff;
+    box-shadow: 5px 5px #C8D0D8;
+    margin: 0 auto;
+}
+
+a.button:hover {
+    background-color: #1da64a;
+}
