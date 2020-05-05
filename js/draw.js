@@ -12,7 +12,7 @@ document.getElementById('image-file').onchange = function(e) {
     img.src = URL.createObjectURL(this.files[0]);
     overlay.onload = draw;
     
-    overlay.src = "overlay.png"
+    overlay.src = "../img/overlay.png"
     button.style="visibility:visible";
   };
 
