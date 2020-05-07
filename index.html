@@ -5,12 +5,21 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </header>
  <body onload="draw();">
-  <canvas id="canvas"></canvas>
-  <br>
-   <input id="image-file" type="file" class="button">
-   <br>
-   <a href="#" class="button" id="download" download="profilbild.png" style="visibility:hidden">Download</a>
+  <div style="text-align: center;">
 
-   <script src="js/draw.js"></script>
+    <canvas id="canvas"></canvas>
+    <div class="slidecontainer" style="visibility:hidden">
+      X:
+      <input id="slide-x" type="range" min="1" max="100" value="50" class="slider" id="myRange">
+      Y:
+      <input id="slide-y" type="range" min="1" max="100" value="50" class="slider" id="myRange">
+    </div>
+    <br>
+    <input id="image-file" type="file" class="button">
+    <br>
+    <a href="#" class="button" id="download" download="profilbild.png" style="visibility:hidden">Download</a>
+    <script src="js/draw.js"></script>
+
+  </div>
  </body>
 </html>
