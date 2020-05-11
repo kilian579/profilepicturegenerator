@@ -32,8 +32,9 @@ for (const [k, path] of Object.entries(overlays)){
 }
 
 
-//Only for Development:
+//This line is only for development:
 //document.body.appendChild(canvas_original);
+
 document.getElementById('image-file').onchange = function(e) {
     img.onload = draw;
     img.onerror = failed;
@@ -98,7 +99,7 @@ function draw(){
             x*sl+0.15*sl, y*sl, sl*0.7, (h/w)*sl*0.7);
           }
       else 
-          {ctx.drawImage(img, 0, 0, h, h, 
+          {ctx.drawImage(img, 0, 0, w, h, 
             x*sl, y*sl+0.15*sl, (w/h)*sl*0.7, sl*0.7)}
 
       ctx.drawImage(overlay, 0, 0, sl, sl);
